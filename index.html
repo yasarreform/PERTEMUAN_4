@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TDC Profile Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TDC Profile Generator</h1>
+        <p>Isi form lalu buat profile card kamu.</p>
+    </header>
+
+
+    <main class="container">
+
+        <form id="profileForm" class="form-card">
+
+            <h2>Form Profile</h2>
+
+
+            <div class="form-group">
+
+                <label for="nama">
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="kelas">
+                    Kelas
+                </label>
+
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Contoh: XI-A"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <p>Minat Coding</p>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="minat"
+                        value="Web Development"
+                        required
+                    >
+
+                    Web Development
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="minat"
+                        value="Game Development"
+                    >
+
+                    Game Development
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="minat"
+                        value="Artificial Intelligence"
+                    >
+
+                    Artificial Intelligence
+
+                </label>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="level">
+                    Level
+                </label>
+
+                <select id="level">
+
+                    <option value="Beginner">
+                        Beginner
+                    </option>
+
+                    <option value="Intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="Expert">
+                        Expert
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="motto">
+                    Motto
+                </label>
+
+                <textarea
+                    id="motto"
+                    placeholder="Keep learning!"
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Buat Profile Card
+            </button>
+
+        </form>
+
+
+        <section class="result-area">
+
+            <div
+                class="profile-card"
+                id="profileCard"
+            >
+
+                <h2 id="hasilNama">
+                    Nama Kamu
+                </h2>
+
+
+                <p>
+                    <strong>Kelas:</strong>
+
+                    <span id="hasilKelas">
+                        -
+                    </span>
+                </p>
+
+
+                <p>
+                    <strong>Minat:</strong>
+
+                    <span id="hasilMinat">
+                        -
+                    </span>
+                </p>
+
+
+                <p>
+                    <strong>Level:</strong>
+
+                    <span id="hasilLevel">
+                        -
+                    </span>
+                </p>
+
+
+                <p
+                    class="motto"
+                    id="hasilMotto"
+                >
+                    Motto kamu akan tampil di sini.
+                </p>
+
+
+                <small>
+                    TDC CODING BEGINNER
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6fb;
+}
+
+
+header {
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+.container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    padding: 20px;
+}
+
+
+.form-card,
+.profile-card {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+.form-group label,
+.form-group p {
+    display: block;
+
+    margin-bottom: 7px;
+}
+
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+
+textarea {
+    min-height: 80px;
+
+    resize: vertical;
+}
+
+
+/* RADIO BUTTON */
+
+.form-group label:has(input[type="radio"]) {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #3157d5;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #203da5;
+}
+
+
+/* PROFILE CARD */
+
+.profile-card {
+    text-align: center;
+
+    border-top: 6px solid #6c5ce7;
+}
+
+
+.profile-card h2 {
+    margin-top: 0;
+}
+
+
+.profile-card .motto {
+    padding: 12px;
+
+    background-color: #f3f0ff;
+
+    border-radius: 8px;
+
+    font-style: italic;
+}
+
+
+.profile-card small {
+    color: #777;
+}
