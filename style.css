@@ -72,6 +72,10 @@ button:hover {
     background-color: #203da5;
 }
 
+.form-card button {
+    margin-top: 8px;
+}
+
 .profile-card {
     text-align: center;
     border-top: 6px solid #6c5ce7;
